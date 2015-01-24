@@ -1,0 +1,28 @@
+Changelog:
+[1/23/14]
+Fixed Atms
+Added towable objects
+fixed config 
+Removed all fog
+On key press added ear muffs to delete key
+
+Teleport to player
+Code: [Select]
+{    
+	if (isPlayer _x && (name _x=="USER")) then {    
+          player setPos (position _x);
+	}  
+} forEach playableUnits;
+
+Teleport player to self
+Code: [Select]
+{    
+	if (isPlayer _x && (name _x=="USER")) then {    
+          _x setPos (position player);
+	}  
+} forEach playableUnits;
+
+Added committ 3e1ca79f8d6ba0b4110342a80ff68831045dddef - payload.sqf
+
+02d90361208d927ceadcc38696852defae041c24
+getplayerflag.sqf
