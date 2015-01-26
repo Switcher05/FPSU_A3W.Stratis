@@ -90,21 +90,10 @@ switch (true) do
 		if (soundVolume <= 0.5) then
 		{
 			0.5 fadeSound 1;
-			["You've taken out your ear plugs.",4] call mf_notify_client;
+			["You've taken out your ear plugs.",5] call mf_notify_client;
 		} else {
 			0.5 fadeSound 0.1;
-			["You've inserted your ear plugs.",4] call mf_notify_client;
-		};
-	};
-	case (_key == 211);
-	{
-		if (soundVolume <= 0.5) then
-		{
-			0.5 fadeSound 1;
-			["You've put on your ear muffs.",4] call mf_notify_client;
-		} else {
-			0.5 fadeSound 0.2;
-			["You've iput on your ear muffs.",4] call mf_notify_client;
+			["You've inserted your ear plugs.",5] call mf_notify_client;
 		};
 	};
 };

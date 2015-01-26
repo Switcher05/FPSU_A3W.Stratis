@@ -25,5 +25,5 @@
 	["Town_18", 100, "LZ Connor"],
 	["Town_19", 180, "Playa-del-Stragos"],
 	["Town_20", 250, "ol-Jay"],
-	["Town_21", 200, "Crossroads"]
+	["Town_21", 100, "Crossroads"]
 ]

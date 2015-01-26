@@ -16,13 +16,6 @@ R3F_LOG_CFG_remorqueurs =
 	"Truck_03_base_F",
 	"Wheeled_APC_F",
 	"Tank_F",
-	"B_Truck_01_box_F",
-	"B_Truck_01_mover_F",
-	"B_Truck_01_medical_F",
-	"B_Truck_01_transport_F",
-	"B_Truck_01_covered_F",
-	"O_Truck_02_transport_F",
-	"O_Truck_02_medical_F",
 	"Boat_Armed_01_base_F"
 ];
 
@@ -53,7 +46,14 @@ R3F_LOG_CFG_objets_remorquables =
  */
 R3F_LOG_CFG_heliporteurs =
 [
-	"Helicopter_Base_F"
+	"I_Heli_Transport_02_F",
+	"O_Heli_Light_02_unarmed_F",
+	"B_Heli_Transport_03_F",
+	"B_Heli_Transport_03_unarmed_F",
+	"O_Heli_Transport_04_F",
+	"O_Heli_Transport_04_bench_F",
+	"O_Heli_Transport_04_covered_F",
+	"O_Heli_Transport_04_box_F"
 ];
 
 /**
@@ -71,9 +71,6 @@ R3F_LOG_CFG_objets_heliportables =
 	"UGV_01_base_F",
 	"SDV_01_base_F",
 	"Boat_Civil_01_base_F",
-	"Tank_F",
-	"Wheeled_APC_F",
-	"APC",
 	"Boat_Armed_01_base_F"
 ];
 
@@ -145,6 +142,7 @@ R3F_LOG_CFG_objets_transportables =
 	["Land_CncShelter_F", 2],
 	["Land_CncWall1_F", 3],
 	["Land_CncWall4_F", 5],
+	["Land_Cargo_HQ_V1_F", 30],
 	["Land_Crash_barrier_F", 5],
 	["Land_HBarrierBig_F", 5],
 	["Land_HBarrierTower_F", 8],
@@ -194,6 +192,7 @@ R3F_LOG_CFG_objets_deplacables =
 	"Land_Canal_WallSmall_10m_F",
 	"Land_Canal_Wall_Stairs_F",
 	"Land_CargoBox_V1_F",
+	"Land_Cargo_HQ_V1_F",
 	"Land_Cargo_Patrol_V1_F",
 	"Land_Cargo_Tower_V1_F",
 	"Land_CncBarrier_F",

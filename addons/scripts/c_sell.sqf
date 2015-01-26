@@ -1,4 +1,4 @@
-#define PRICE_RELATIONSHIP 0.5
+#define PRICE_RELATIONSHIP 0.8
 
 _vehicle = _this;
 _driver = driver _vehicle;
@@ -19,20 +19,20 @@ if((player == driver _vehicle) && (!_eng))then {
 	_playerMoney = player getVariable "cmoney";
 
 	_price = 300;
-	
+
 	//find price from vehicle store prices
-	{	
+	{
 	if (_type == _x select 1) then
-		{	
+		{
 			_price = _x select 2;
 			_price = round (_price * PRICE_RELATIONSHIP);
 		};
 	} forEach (call allVehStoreVehicles);
-	
+
 		player setVariable["cmoney",(player getVariable "cmoney")+_price,true];
 		[] call fn_savePlayerData;
 		["Dismantling will take about 1 minute.", 10] call mf_notify_client;
-		
+
 		_vehicle setFuel 0;
 		_vehicle setVelocity [0,0,0];
 		_text = format ["Selling %1 for $%2. Removing Engine, emptying fluids, and removing ammo.", _displayNameVEH, _price];
@@ -46,7 +46,7 @@ if((player == driver _vehicle) && (!_eng))then {
 		_this animate ["HideBumper2", 1];
 		sleep 1;
 		_this animate ["HideDoor1", 1];
-		sleep 1;		
+		sleep 1;
 		_this animate ["HideDoor2", 1];
 		sleep 1;
 		_this animate ["HideDoor3", 1];

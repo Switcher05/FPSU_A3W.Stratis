@@ -93,7 +93,7 @@ player addEventHandler ["InventoryClosed",
 {
 	_lastVeh = vehicle player;
 
-	while {true} do
+	waitUntil
 	{
 		_currVeh = vehicle player;
 
@@ -110,7 +110,13 @@ player addEventHandler ["InventoryClosed",
 		};
 
 		_lastVeh = _currVeh;
-		uiSleep 0.25;
+		// Prevent usage of commander camera
+		if (cameraView == "GROUP") then
+		{
+			cameraOn switchCamera "EXTERNAL";
+		};
+
+		false
 	};
 };
 

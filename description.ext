@@ -56,6 +56,9 @@ loadScreen = "mapConfig\Loading.jpg";
 #include "addons\proving_ground\PG_config.hpp"
 #include "client\systems\contentMenu\dialog\content_settings.hpp"
 #include "addons\outlw_magRepack\MagRepack_config.hpp"
+//#include "addons\parking\list_simple_menu.hpp"
+//#include "addons\cctv\laptop_flat_menu.hpp"
+//#include "addons\cctv\cctv_menu.hpp"
 
 
 class RscTitles
@@ -64,6 +67,16 @@ class RscTitles
 	#include "client\systems\hud\dialog\hud.hpp"
 	#include "client\systems\playerMenu\dialog\welcome.hpp"
 	#include "client\systems\scoreboard\score_gui.hpp"
+	//#include "addons\boomerang\hud.hpp"
+};
+class CfgDebriefing
+{
+	class Reboot
+	{
+		title = "Rebooting";
+		subtitle = "Thank you for playing!";
+		description = "Server will save database and restart to increase performance. Please, give us some time :)";
+	};
 };
 
 class CfgFunctions
@@ -78,3 +91,10 @@ class CfgNotifications
 {
 	#include "client\CfgNotifications.hpp"
 };
+/*
+class CfgSounds
+{
+	sounds[] = {};
+	#include "addons\boomerang\sounds.hpp"
+};
+*/
